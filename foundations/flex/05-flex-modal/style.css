@@ -9,7 +9,7 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
 }
 
 .icon {
@@ -33,6 +36,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 16px;
+  flex: 0 0 auto;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  flex: 2 1 auto;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 2 1 auto;
+}
+
+.header {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 0;
+  justify-content: flex-start;
+  gap: 8px;
 }
 
 .close-button {
